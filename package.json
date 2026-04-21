@@ -1,19 +1,26 @@
 {
   "name": "qrtalker",
-  "version": "0.0.0",
-  "type": "module",
+  "version": "1.0.0",
   "scripts": {
-    "init": "npx -y pnpm install",
-    "update": "npx -y pnpm update",
-    "clean": "vue-tsc --build --clean",
-    "dev": "vite",
-    "build": "vue-tsc --build && vite build"
+    "init": "bun install || npx -y bun install",
+    "update": "bun update || npx -y bun update",
+    "start": "bunx --bun vite --host 127.0.0.1",
+    "dist": " bunx --bun vite build"
   },
   "dependencies": {
-    "vue": "^3.5.13"
+    "@ant-design/icons": "^6.1.1",
+    "@tanstack/react-query": "^5.99.2",
+    "@tanstack/react-router": "^1.168.23",
+    "antd": "^6.3.6",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.2.1",
-    "vite": "^6.0.3"
+    "@tanstack/router-plugin": "^1.167.22",
+    "@types/node": "^25.6.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react-swc": "^4.3.0",
+    "vite": "^8.0.9"
   }
 }

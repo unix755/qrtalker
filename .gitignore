@@ -741,5 +741,11 @@ FodyWeavers.xsd
 
 # End of https://www.toptal.com/developers/gitignore/api/node,linux,macos,windows,visualstudio,jetbrains+all,visualstudiocode,angular
 
+# tanstack
+.tanstack
+src/routeTree.gen.ts
+
+# lock
 package-lock.json
 pnpm-lock.yaml
+bun.lock
