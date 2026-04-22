@@ -28,7 +28,7 @@ function RootComponent() {
             icon: <SearchOutlined/>,
             label: "查询",
             children: [
-                {key: "/test", label: <Link to="/">测试</Link>}
+                {key: "/ipinfo", label: <Link to="/ipinfo">IP</Link>}
             ]
         }
     ]
